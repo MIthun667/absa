@@ -1,0 +1,10 @@
+path,line_number,annotation_index,record_id,severity,kind,raw_va,message
+subtask_1/rus/rus_restaurant_train_alltasks.jsonl,999,0,24713:3_998,error,invalid_va,5#16.5,"VA outside [1, 9]: '5#16.5'"
+subtask_1/tat/tat_restaurant_train_alltasks.jsonl,999,0,24713:3_998,error,invalid_va,5#16.5,"VA outside [1, 9]: '5#16.5'"
+subtask_1/ukr/ukr_restaurant_train_alltasks.jsonl,999,0,24713:3_998,error,invalid_va,5#16.5,"VA outside [1, 9]: '5#16.5'"
+subtask_2/rus/rus_restaurant_train_alltasks.jsonl,999,0,24713:3_998,error,invalid_va,5#16.5,"VA outside [1, 9]: '5#16.5'"
+subtask_2/tat/tat_restaurant_train_alltasks.jsonl,999,0,24713:3_998,error,invalid_va,5#16.5,"VA outside [1, 9]: '5#16.5'"
+subtask_2/ukr/ukr_restaurant_train_alltasks.jsonl,999,0,24713:3_998,error,invalid_va,5#16.5,"VA outside [1, 9]: '5#16.5'"
+subtask_3/rus/rus_restaurant_train_alltasks.jsonl,999,0,24713:3_998,error,invalid_va,5#16.5,"VA outside [1, 9]: '5#16.5'"
+subtask_3/tat/tat_restaurant_train_alltasks.jsonl,999,0,24713:3_998,error,invalid_va,5#16.5,"VA outside [1, 9]: '5#16.5'"
+subtask_3/ukr/ukr_restaurant_train_alltasks.jsonl,999,0,24713:3_998,error,invalid_va,5#16.5,"VA outside [1, 9]: '5#16.5'"

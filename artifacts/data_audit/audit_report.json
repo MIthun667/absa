@@ -1,0 +1,19 @@
+{
+  "raw_root": "/home/mithun-hossain/Desktop/absa/data/raw/dimabsa",
+  "files": 156,
+  "records": 186742,
+  "annotations": 324422,
+  "validation_issues": 9,
+  "invalid_va_annotations": 9,
+  "json_parse_errors": 0,
+  "artifacts": [
+    "file_inventory.csv",
+    "dataset_summary.csv",
+    "validation_issues.csv",
+    "va_annotations.csv",
+    "within_file_duplicates.csv",
+    "split_overlap.csv",
+    "cross_task_consistency.csv",
+    "categorical_va_alignment.csv"
+  ]
+}

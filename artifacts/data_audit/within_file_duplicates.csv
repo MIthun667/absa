@@ -1,0 +1,347 @@
+dataset,path,kind,value,count
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,screen is good .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,works great !,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,works great .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,nice keyboard .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,great product !,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,easy to use .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,awesome computer .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love this computer !,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,don ' t buy it .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,i love this chromebook !,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,very good purchase .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,"6 - inch hd touch , intel celeron n3150 , 4gb ddr3l , 32gb , chrome , cb5 - 132t - c1lk",2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,i love this laptop !,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,it was easy to set up .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love it !,3
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,i love it .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,this is a great notebook .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,this is a great laptop .,3
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love love love this laptop !,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love it .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,the keyboard is good .,2
+categorical/subtask_1/eng/laptop/train,categorical/subtask_1/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,the build quality is fantastic .,2
+categorical/subtask_1/eng/restaurant/dev,categorical/subtask_1/eng/eng_restaurant_dev_task1_polarity.jsonl,duplicate_text,great customer service,2
+categorical/subtask_1/eng/restaurant/train,categorical/subtask_1/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,yum !,2
+categorical/subtask_1/eng/restaurant/train,categorical/subtask_1/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,i love this place !,2
+categorical/subtask_1/eng/restaurant/train,categorical/subtask_1/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,the atmosphere was great .,2
+categorical/subtask_1/eng/restaurant/train,categorical/subtask_1/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,you ca n ' t go wrong here .,2
+categorical/subtask_1/eng/restaurant/train,categorical/subtask_1/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,ca n ' t wait to go back .,2
+categorical/subtask_1/eng/restaurant/train,categorical/subtask_1/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,i love it .,2
+categorical/subtask_1/eng/restaurant/train,categorical/subtask_1/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,loved it,2
+categorical/subtask_1/eng/restaurant/train,categorical/subtask_1/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,awesome,2
+categorical/subtask_1/jpn/hotel/test,categorical/subtask_1/jpn/jpn_hotel_test_task1_polarity.jsonl,duplicate_text,無料のレンタサイクルがあり大変便利でした,2
+categorical/subtask_1/jpn/hotel/test,categorical/subtask_1/jpn/jpn_hotel_test_task1_polarity.jsonl,duplicate_text,お得なプランとホテルに大満足でした,2
+categorical/subtask_1/jpn/hotel/train,categorical/subtask_1/jpn/jpn_hotel_train_alltasks_polarity.jsonl,duplicate_text,立地が良く、その上サウナまでついて、リーズナブルで最高でした,2
+categorical/subtask_1/jpn/hotel/train,categorical/subtask_1/jpn/jpn_hotel_train_alltasks_polarity.jsonl,duplicate_text,駅からも近く、新しくてきれいで使いよかったですまた機会があれば利用したいです,2
+categorical/subtask_1/jpn/hotel/train,categorical/subtask_1/jpn/jpn_hotel_train_alltasks_polarity.jsonl,duplicate_text,お風呂がとても良かったです,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,口味還不錯。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,價格也不貴。,3
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,交通相當便利。,3
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,滋味不錯。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,環境還蠻舒服的。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,口感很好。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,口感軟嫩。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,雞肉軟嫩。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,肉質軟嫩。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,座位數相當多。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,用餐環境很寬敞。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,米飯粒粒分明。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,但整體來說是好吃的。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,食材新鮮。,4
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,麵條q彈。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐點很好吃。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,飲料好喝。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐點好吃。,3
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,海鮮很新鮮。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐點都很好吃。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐廳廁所也乾淨。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,魷魚炸的很香但要趁熱吃。,2
+categorical/subtask_1/zho/restaurant/train,categorical/subtask_1/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,因鬆餅口感不是很好。,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,screen is good .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,works great !,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,works great .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,nice keyboard .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,great product !,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,easy to use .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,awesome computer .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love this computer !,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,don ' t buy it .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,i love this chromebook !,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,very good purchase .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,"6 - inch hd touch , intel celeron n3150 , 4gb ddr3l , 32gb , chrome , cb5 - 132t - c1lk",2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,i love this laptop !,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,it was easy to set up .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love it !,3
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,i love it .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,this is a great notebook .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,this is a great laptop .,3
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love love love this laptop !,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love it .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,the keyboard is good .,2
+categorical/subtask_2/eng/laptop/train,categorical/subtask_2/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,the build quality is fantastic .,2
+categorical/subtask_2/eng/restaurant/train,categorical/subtask_2/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,yum !,2
+categorical/subtask_2/eng/restaurant/train,categorical/subtask_2/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,i love this place !,2
+categorical/subtask_2/eng/restaurant/train,categorical/subtask_2/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,the atmosphere was great .,2
+categorical/subtask_2/eng/restaurant/train,categorical/subtask_2/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,you ca n ' t go wrong here .,2
+categorical/subtask_2/eng/restaurant/train,categorical/subtask_2/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,ca n ' t wait to go back .,2
+categorical/subtask_2/eng/restaurant/train,categorical/subtask_2/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,i love it .,2
+categorical/subtask_2/eng/restaurant/train,categorical/subtask_2/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,loved it,2
+categorical/subtask_2/eng/restaurant/train,categorical/subtask_2/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,awesome,2
+categorical/subtask_2/jpn/hotel/dev,categorical/subtask_2/jpn/jpn_hotel_dev_task2_polarity.jsonl,duplicate_text,それなりに綺麗で美味しく、量も多くて、普通サイズの女性には食べ切れない程,2
+categorical/subtask_2/jpn/hotel/train,categorical/subtask_2/jpn/jpn_hotel_train_alltasks_polarity.jsonl,duplicate_text,立地が良く、その上サウナまでついて、リーズナブルで最高でした,2
+categorical/subtask_2/jpn/hotel/train,categorical/subtask_2/jpn/jpn_hotel_train_alltasks_polarity.jsonl,duplicate_text,駅からも近く、新しくてきれいで使いよかったですまた機会があれば利用したいです,2
+categorical/subtask_2/jpn/hotel/train,categorical/subtask_2/jpn/jpn_hotel_train_alltasks_polarity.jsonl,duplicate_text,お風呂がとても良かったです,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,口味還不錯。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,價格也不貴。,3
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,交通相當便利。,3
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,滋味不錯。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,環境還蠻舒服的。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,口感很好。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,口感軟嫩。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,雞肉軟嫩。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,肉質軟嫩。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,座位數相當多。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,用餐環境很寬敞。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,米飯粒粒分明。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,但整體來說是好吃的。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,食材新鮮。,4
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,麵條q彈。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐點很好吃。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,飲料好喝。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐點好吃。,3
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,海鮮很新鮮。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐點都很好吃。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐廳廁所也乾淨。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,魷魚炸的很香但要趁熱吃。,2
+categorical/subtask_2/zho/restaurant/train,categorical/subtask_2/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,因鬆餅口感不是很好。,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,screen is good .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,works great !,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,works great .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,nice keyboard .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,great product !,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,easy to use .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,awesome computer .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love this computer !,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,don ' t buy it .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,i love this chromebook !,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,very good purchase .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,"6 - inch hd touch , intel celeron n3150 , 4gb ddr3l , 32gb , chrome , cb5 - 132t - c1lk",2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,i love this laptop !,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,it was easy to set up .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love it !,3
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,i love it .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,this is a great notebook .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,this is a great laptop .,3
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love love love this laptop !,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,love it .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,the keyboard is good .,2
+categorical/subtask_3/eng/laptop/train,categorical/subtask_3/eng/eng_laptop_train_alltasks_polarity.jsonl,duplicate_text,the build quality is fantastic .,2
+categorical/subtask_3/eng/restaurant/train,categorical/subtask_3/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,yum !,2
+categorical/subtask_3/eng/restaurant/train,categorical/subtask_3/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,i love this place !,2
+categorical/subtask_3/eng/restaurant/train,categorical/subtask_3/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,the atmosphere was great .,2
+categorical/subtask_3/eng/restaurant/train,categorical/subtask_3/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,you ca n ' t go wrong here .,2
+categorical/subtask_3/eng/restaurant/train,categorical/subtask_3/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,ca n ' t wait to go back .,2
+categorical/subtask_3/eng/restaurant/train,categorical/subtask_3/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,i love it .,2
+categorical/subtask_3/eng/restaurant/train,categorical/subtask_3/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,loved it,2
+categorical/subtask_3/eng/restaurant/train,categorical/subtask_3/eng/eng_restaurant_train_alltasks_polarity.jsonl,duplicate_text,awesome,2
+categorical/subtask_3/jpn/hotel/dev,categorical/subtask_3/jpn/jpn_hotel_dev_task3_polarity.jsonl,duplicate_text,それなりに綺麗で美味しく、量も多くて、普通サイズの女性には食べ切れない程,2
+categorical/subtask_3/jpn/hotel/train,categorical/subtask_3/jpn/jpn_hotel_train_alltasks_polarity.jsonl,duplicate_text,立地が良く、その上サウナまでついて、リーズナブルで最高でした,2
+categorical/subtask_3/jpn/hotel/train,categorical/subtask_3/jpn/jpn_hotel_train_alltasks_polarity.jsonl,duplicate_text,駅からも近く、新しくてきれいで使いよかったですまた機会があれば利用したいです,2
+categorical/subtask_3/jpn/hotel/train,categorical/subtask_3/jpn/jpn_hotel_train_alltasks_polarity.jsonl,duplicate_text,お風呂がとても良かったです,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,口味還不錯。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,價格也不貴。,3
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,交通相當便利。,3
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,滋味不錯。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,環境還蠻舒服的。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,口感很好。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,口感軟嫩。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,雞肉軟嫩。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,肉質軟嫩。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,座位數相當多。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,用餐環境很寬敞。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,米飯粒粒分明。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,但整體來說是好吃的。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,食材新鮮。,4
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,麵條q彈。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐點很好吃。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,飲料好喝。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐點好吃。,3
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,海鮮很新鮮。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐點都很好吃。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,餐廳廁所也乾淨。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,魷魚炸的很香但要趁熱吃。,2
+categorical/subtask_3/zho/restaurant/train,categorical/subtask_3/zho/zho_restaurant_train_alltasks_polarity.jsonl,duplicate_text,因鬆餅口感不是很好。,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,screen is good .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,works great !,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,works great .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,nice keyboard .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,great product !,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,easy to use .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,awesome computer .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love this computer !,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,don ' t buy it .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,i love this chromebook !,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,very good purchase .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,"6 - inch hd touch , intel celeron n3150 , 4gb ddr3l , 32gb , chrome , cb5 - 132t - c1lk",2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,i love this laptop !,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,it was easy to set up .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love it !,3
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,i love it .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,this is a great notebook .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,this is a great laptop .,3
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love love love this laptop !,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love it .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,the keyboard is good .,2
+dimensional/subtask_1/eng/laptop/train,subtask_1/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,the build quality is fantastic .,2
+dimensional/subtask_1/eng/restaurant/dev,subtask_1/eng/eng_restaurant_dev_task1.jsonl,duplicate_text,great customer service,2
+dimensional/subtask_1/eng/restaurant/train,subtask_1/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,yum !,2
+dimensional/subtask_1/eng/restaurant/train,subtask_1/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,i love this place !,2
+dimensional/subtask_1/eng/restaurant/train,subtask_1/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,the atmosphere was great .,2
+dimensional/subtask_1/eng/restaurant/train,subtask_1/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,you ca n ' t go wrong here .,2
+dimensional/subtask_1/eng/restaurant/train,subtask_1/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,ca n ' t wait to go back .,2
+dimensional/subtask_1/eng/restaurant/train,subtask_1/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,i love it .,2
+dimensional/subtask_1/eng/restaurant/train,subtask_1/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,loved it,2
+dimensional/subtask_1/eng/restaurant/train,subtask_1/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,awesome,2
+dimensional/subtask_1/jpn/hotel/test,subtask_1/jpn/jpn_hotel_test_task1.jsonl,duplicate_text,無料のレンタサイクルがあり大変便利でした,2
+dimensional/subtask_1/jpn/hotel/test,subtask_1/jpn/jpn_hotel_test_task1.jsonl,duplicate_text,お得なプランとホテルに大満足でした,2
+dimensional/subtask_1/jpn/hotel/train,subtask_1/jpn/jpn_hotel_train_alltasks.jsonl,duplicate_text,立地が良く、その上サウナまでついて、リーズナブルで最高でした,2
+dimensional/subtask_1/jpn/hotel/train,subtask_1/jpn/jpn_hotel_train_alltasks.jsonl,duplicate_text,駅からも近く、新しくてきれいで使いよかったですまた機会があれば利用したいです,2
+dimensional/subtask_1/jpn/hotel/train,subtask_1/jpn/jpn_hotel_train_alltasks.jsonl,duplicate_text,お風呂がとても良かったです,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,口味還不錯。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,價格也不貴。,3
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,交通相當便利。,3
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,滋味不錯。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,環境還蠻舒服的。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,口感很好。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,口感軟嫩。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,雞肉軟嫩。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,肉質軟嫩。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,座位數相當多。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,用餐環境很寬敞。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,米飯粒粒分明。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,但整體來說是好吃的。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,食材新鮮。,4
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,麵條q彈。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐點很好吃。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,飲料好喝。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐點好吃。,3
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,海鮮很新鮮。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐點都很好吃。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐廳廁所也乾淨。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,魷魚炸的很香但要趁熱吃。,2
+dimensional/subtask_1/zho/restaurant/train,subtask_1/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,因鬆餅口感不是很好。,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,screen is good .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,works great !,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,works great .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,nice keyboard .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,great product !,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,easy to use .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,awesome computer .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love this computer !,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,don ' t buy it .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,i love this chromebook !,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,very good purchase .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,"6 - inch hd touch , intel celeron n3150 , 4gb ddr3l , 32gb , chrome , cb5 - 132t - c1lk",2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,i love this laptop !,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,it was easy to set up .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love it !,3
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,i love it .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,this is a great notebook .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,this is a great laptop .,3
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love love love this laptop !,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love it .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,the keyboard is good .,2
+dimensional/subtask_2/eng/laptop/train,subtask_2/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,the build quality is fantastic .,2
+dimensional/subtask_2/eng/restaurant/train,subtask_2/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,yum !,2
+dimensional/subtask_2/eng/restaurant/train,subtask_2/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,i love this place !,2
+dimensional/subtask_2/eng/restaurant/train,subtask_2/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,the atmosphere was great .,2
+dimensional/subtask_2/eng/restaurant/train,subtask_2/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,you ca n ' t go wrong here .,2
+dimensional/subtask_2/eng/restaurant/train,subtask_2/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,ca n ' t wait to go back .,2
+dimensional/subtask_2/eng/restaurant/train,subtask_2/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,i love it .,2
+dimensional/subtask_2/eng/restaurant/train,subtask_2/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,loved it,2
+dimensional/subtask_2/eng/restaurant/train,subtask_2/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,awesome,2
+dimensional/subtask_2/jpn/hotel/dev,subtask_2/jpn/jpn_hotel_dev_task2.jsonl,duplicate_text,それなりに綺麗で美味しく、量も多くて、普通サイズの女性には食べ切れない程,2
+dimensional/subtask_2/jpn/hotel/train,subtask_2/jpn/jpn_hotel_train_alltasks.jsonl,duplicate_text,立地が良く、その上サウナまでついて、リーズナブルで最高でした,2
+dimensional/subtask_2/jpn/hotel/train,subtask_2/jpn/jpn_hotel_train_alltasks.jsonl,duplicate_text,駅からも近く、新しくてきれいで使いよかったですまた機会があれば利用したいです,2
+dimensional/subtask_2/jpn/hotel/train,subtask_2/jpn/jpn_hotel_train_alltasks.jsonl,duplicate_text,お風呂がとても良かったです,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,口味還不錯。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,價格也不貴。,3
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,交通相當便利。,3
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,滋味不錯。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,環境還蠻舒服的。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,口感很好。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,口感軟嫩。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,雞肉軟嫩。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,肉質軟嫩。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,座位數相當多。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,用餐環境很寬敞。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,米飯粒粒分明。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,但整體來說是好吃的。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,食材新鮮。,4
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,麵條q彈。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐點很好吃。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,飲料好喝。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐點好吃。,3
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,海鮮很新鮮。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐點都很好吃。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐廳廁所也乾淨。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,魷魚炸的很香但要趁熱吃。,2
+dimensional/subtask_2/zho/restaurant/train,subtask_2/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,因鬆餅口感不是很好。,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,screen is good .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,works great !,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,works great .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,nice keyboard .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,great product !,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,easy to use .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,awesome computer .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love this computer !,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,don ' t buy it .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,i love this chromebook !,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,very good purchase .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,"6 - inch hd touch , intel celeron n3150 , 4gb ddr3l , 32gb , chrome , cb5 - 132t - c1lk",2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,i love this laptop !,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,it was easy to set up .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love it !,3
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,i love it .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,this is a great notebook .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,this is a great laptop .,3
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love love love this laptop !,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,love it .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,the keyboard is good .,2
+dimensional/subtask_3/eng/laptop/train,subtask_3/eng/eng_laptop_train_alltasks.jsonl,duplicate_text,the build quality is fantastic .,2
+dimensional/subtask_3/eng/restaurant/train,subtask_3/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,yum !,2
+dimensional/subtask_3/eng/restaurant/train,subtask_3/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,i love this place !,2
+dimensional/subtask_3/eng/restaurant/train,subtask_3/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,the atmosphere was great .,2
+dimensional/subtask_3/eng/restaurant/train,subtask_3/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,you ca n ' t go wrong here .,2
+dimensional/subtask_3/eng/restaurant/train,subtask_3/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,ca n ' t wait to go back .,2
+dimensional/subtask_3/eng/restaurant/train,subtask_3/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,i love it .,2
+dimensional/subtask_3/eng/restaurant/train,subtask_3/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,loved it,2
+dimensional/subtask_3/eng/restaurant/train,subtask_3/eng/eng_restaurant_train_alltasks.jsonl,duplicate_text,awesome,2
+dimensional/subtask_3/jpn/hotel/dev,subtask_3/jpn/jpn_hotel_dev_task3.jsonl,duplicate_text,それなりに綺麗で美味しく、量も多くて、普通サイズの女性には食べ切れない程,2
+dimensional/subtask_3/jpn/hotel/train,subtask_3/jpn/jpn_hotel_train_alltasks.jsonl,duplicate_text,立地が良く、その上サウナまでついて、リーズナブルで最高でした,2
+dimensional/subtask_3/jpn/hotel/train,subtask_3/jpn/jpn_hotel_train_alltasks.jsonl,duplicate_text,駅からも近く、新しくてきれいで使いよかったですまた機会があれば利用したいです,2
+dimensional/subtask_3/jpn/hotel/train,subtask_3/jpn/jpn_hotel_train_alltasks.jsonl,duplicate_text,お風呂がとても良かったです,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,口味還不錯。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,價格也不貴。,3
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,交通相當便利。,3
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,滋味不錯。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,環境還蠻舒服的。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,口感很好。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,口感軟嫩。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,雞肉軟嫩。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,肉質軟嫩。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,座位數相當多。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,用餐環境很寬敞。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,米飯粒粒分明。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,但整體來說是好吃的。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,食材新鮮。,4
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,麵條q彈。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐點很好吃。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,飲料好喝。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐點好吃。,3
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,海鮮很新鮮。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐點都很好吃。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,餐廳廁所也乾淨。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,魷魚炸的很香但要趁熱吃。,2
+dimensional/subtask_3/zho/restaurant/train,subtask_3/zho/zho_restaurant_train_alltasks.jsonl,duplicate_text,因鬆餅口感不是很好。,2

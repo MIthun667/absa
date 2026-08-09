@@ -1,0 +1,64 @@
+representation,language,domain,split_a,split_b,count,examples
+categorical,eng,laptop,train,dev,1,"[""love this laptop""]"
+categorical,eng,laptop,train,test,0,[]
+categorical,eng,laptop,dev,test,0,[]
+categorical,eng,restaurant,train,dev,1,"[""i love this place""]"
+categorical,eng,restaurant,train,test,0,[]
+categorical,eng,restaurant,dev,test,0,[]
+categorical,jpn,finance,train,dev,0,[]
+categorical,jpn,finance,train,test,0,[]
+categorical,jpn,finance,dev,test,0,[]
+categorical,jpn,hotel,train,dev,3,"[""きれいで助かります"", ""バイキングの内容も良く、非常に満足です"", ""朝ごはんはいつも美味しいお掃除に最低限を求めても仕方ないようですね""]"
+categorical,jpn,hotel,train,test,25,"[""おもてなしも食事も大満足です"", ""ただ、ホテルの人の対応は悪くない"", ""アメニティーが充実しており、洗顔、化粧品等は持参しなくても大丈夫です"", ""出張で使いましたが便利な場所でよかった"", ""安全面から使用できないのは運が悪かったと理解できますが、受付で使用出来ないと説明がなく気分的にはぼったくりだなと"", ""宿泊プランにいつも大変満足しております"", ""対応も素晴らしくまた機会がありましたら利用したいと思います"", ""山形駅東口から徒歩１０分弱であり、便利なロケーションです"", ""新しいだけあって設備は良かったです"", ""普通のビジネスホテル""]"
+categorical,jpn,hotel,dev,test,7,"[""おかげさまで素敵な時間を過ごすことができ、ぜひまた泊まりに行きたいと思う宿でした"", ""この近辺を中心に観光するなら立地は最高です"", ""サービスも悪いわけではないが、観光値段で割高感は否めないと思いました"", ""岡山駅から徒歩9分という好立地で、非常に安かったです"", ""立地がよく、徒歩圏内でほとんどの用事がすみました"", ""立地は空港からも近く二人ならバスよりタクシーの方が安いかもで観光も路面電車の駅まで歩いて行けるし丁度良い感じでした"", ""館内も綺麗で、気持ちよく過ごせました""]"
+categorical,rus,hotel,train,dev,0,[]
+categorical,rus,hotel,train,test,0,[]
+categorical,rus,hotel,dev,test,0,[]
+categorical,rus,restaurant,train,dev,0,[]
+categorical,rus,restaurant,train,test,0,[]
+categorical,rus,restaurant,dev,test,0,[]
+categorical,tat,restaurant,train,dev,0,[]
+categorical,tat,restaurant,train,test,2,"[""хезмәт күрсәтү бик яхшы."", ""хезмәт күрсәтү яхшы.""]"
+categorical,tat,restaurant,dev,test,0,[]
+categorical,ukr,restaurant,train,dev,1,"[""чудовий ресторан!""]"
+categorical,ukr,restaurant,train,test,0,[]
+categorical,ukr,restaurant,dev,test,0,[]
+categorical,zho,finance,train,dev,0,[]
+categorical,zho,finance,train,test,0,[]
+categorical,zho,finance,dev,test,0,[]
+categorical,zho,laptop,train,dev,0,[]
+categorical,zho,laptop,train,test,0,[]
+categorical,zho,laptop,dev,test,0,[]
+categorical,zho,restaurant,train,dev,0,[]
+categorical,zho,restaurant,train,test,0,[]
+categorical,zho,restaurant,dev,test,1,"[""pastadeshow選用高成本新鮮義大利麵、更健康、口感更好。""]"
+dimensional,eng,laptop,train,dev,1,"[""love this laptop""]"
+dimensional,eng,laptop,train,test,0,[]
+dimensional,eng,laptop,dev,test,0,[]
+dimensional,eng,restaurant,train,dev,1,"[""i love this place""]"
+dimensional,eng,restaurant,train,test,0,[]
+dimensional,eng,restaurant,dev,test,0,[]
+dimensional,jpn,finance,train,dev,0,[]
+dimensional,jpn,finance,train,test,0,[]
+dimensional,jpn,finance,dev,test,0,[]
+dimensional,jpn,hotel,train,dev,3,"[""きれいで助かります"", ""バイキングの内容も良く、非常に満足です"", ""朝ごはんはいつも美味しいお掃除に最低限を求めても仕方ないようですね""]"
+dimensional,jpn,hotel,train,test,25,"[""おもてなしも食事も大満足です"", ""ただ、ホテルの人の対応は悪くない"", ""アメニティーが充実しており、洗顔、化粧品等は持参しなくても大丈夫です"", ""出張で使いましたが便利な場所でよかった"", ""安全面から使用できないのは運が悪かったと理解できますが、受付で使用出来ないと説明がなく気分的にはぼったくりだなと"", ""宿泊プランにいつも大変満足しております"", ""対応も素晴らしくまた機会がありましたら利用したいと思います"", ""山形駅東口から徒歩１０分弱であり、便利なロケーションです"", ""新しいだけあって設備は良かったです"", ""普通のビジネスホテル""]"
+dimensional,jpn,hotel,dev,test,7,"[""おかげさまで素敵な時間を過ごすことができ、ぜひまた泊まりに行きたいと思う宿でした"", ""この近辺を中心に観光するなら立地は最高です"", ""サービスも悪いわけではないが、観光値段で割高感は否めないと思いました"", ""岡山駅から徒歩9分という好立地で、非常に安かったです"", ""立地がよく、徒歩圏内でほとんどの用事がすみました"", ""立地は空港からも近く二人ならバスよりタクシーの方が安いかもで観光も路面電車の駅まで歩いて行けるし丁度良い感じでした"", ""館内も綺麗で、気持ちよく過ごせました""]"
+dimensional,rus,restaurant,train,dev,0,[]
+dimensional,rus,restaurant,train,test,0,[]
+dimensional,rus,restaurant,dev,test,0,[]
+dimensional,tat,restaurant,train,dev,0,[]
+dimensional,tat,restaurant,train,test,2,"[""хезмәт күрсәтү бик яхшы."", ""хезмәт күрсәтү яхшы.""]"
+dimensional,tat,restaurant,dev,test,0,[]
+dimensional,ukr,restaurant,train,dev,1,"[""чудовий ресторан!""]"
+dimensional,ukr,restaurant,train,test,0,[]
+dimensional,ukr,restaurant,dev,test,0,[]
+dimensional,zho,finance,train,dev,0,[]
+dimensional,zho,finance,train,test,0,[]
+dimensional,zho,finance,dev,test,0,[]
+dimensional,zho,laptop,train,dev,0,[]
+dimensional,zho,laptop,train,test,0,[]
+dimensional,zho,laptop,dev,test,0,[]
+dimensional,zho,restaurant,train,dev,0,[]
+dimensional,zho,restaurant,train,test,0,[]
+dimensional,zho,restaurant,dev,test,1,"[""pastadeshow選用高成本新鮮義大利麵、更健康、口感更好。""]"

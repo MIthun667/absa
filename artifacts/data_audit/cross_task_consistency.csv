@@ -1,0 +1,73 @@
+language,domain,split,higher_task,lower_task,shared_texts,exact_projection_matches,mismatches,invalid_va_records,match_rate,examples
+eng,laptop,dev,3,2,200,200,0,0,1.0,[]
+eng,laptop,dev,2,1,2,1,1,0,0.5,"[{""text"": ""the battery life is outstanding"", ""higher"": [[""battery life"", 8.75, 9.0]], ""lower"": [[""battery life"", 8.7, 8.5]]}]"
+eng,laptop,dev,3,1,2,1,1,0,0.5,"[{""text"": ""the battery life is outstanding"", ""higher"": [[""battery life"", 8.75, 9.0]], ""lower"": [[""battery life"", 8.7, 8.5]]}]"
+eng,laptop,test,3,2,1000,999,1,0,0.999,"[{""text"": ""keyboard feels good , looks good , but it does not have a separation between letters , arrows , and numpad , which i wish it had ( for being able to find keys by touch )"", ""higher"": [[""keyboard"", ""good"", 7.0, 7.0], [""keyboard"", ""good"", 7.0, 7.0], [""keyboard"", ""does not have a separation"", 3.75, 5.75]], ""lower"": [[""keyboard"", ""good"", 7.0, 7.0], [""keyboard"", ""does not have a separation"", 3.75, 5.75]]}]"
+eng,laptop,test,2,1,0,0,0,0,,[]
+eng,laptop,test,3,1,0,0,0,0,,[]
+eng,laptop,train,3,2,4052,4052,0,0,1.0,[]
+eng,laptop,train,2,1,4052,4052,0,0,1.0,[]
+eng,laptop,train,3,1,4052,4052,0,0,1.0,[]
+eng,restaurant,dev,3,2,200,200,0,0,1.0,[]
+eng,restaurant,dev,2,1,1,0,1,0,0.0,"[{""text"": ""the service was excellent"", ""higher"": [[""service"", 8.0, 8.12]], ""lower"": [[""service"", 8.33, 8.0]]}]"
+eng,restaurant,dev,3,1,1,0,1,0,0.0,"[{""text"": ""the service was excellent"", ""higher"": [[""service"", 8.0, 8.12]], ""lower"": [[""service"", 8.33, 8.0]]}]"
+eng,restaurant,test,3,2,1000,1000,0,0,1.0,[]
+eng,restaurant,test,2,1,0,0,0,0,,[]
+eng,restaurant,test,3,1,0,0,0,0,,[]
+eng,restaurant,train,3,2,2276,2276,0,0,1.0,[]
+eng,restaurant,train,2,1,2276,2276,0,0,1.0,[]
+eng,restaurant,train,3,1,2276,2276,0,0,1.0,[]
+jpn,hotel,dev,3,2,199,199,0,0,1.0,[]
+jpn,hotel,dev,2,1,0,0,0,0,,[]
+jpn,hotel,dev,3,1,0,0,0,0,,[]
+jpn,hotel,test,3,2,800,800,0,0,1.0,[]
+jpn,hotel,test,2,1,7,0,7,0,0.0,"[{""text"": ""部屋はとても綺麗でした"", ""higher"": [[""部屋"", 7.5, 7.2]], ""lower"": [[""部屋"", 7.25, 7.0]]}, {""text"": ""お部屋お任せでしたが、マッサージチェアもあって仕事の疲れが癒やされました"", ""higher"": [[null, 6.12, 5.75]], ""lower"": [[""マッサージチェア"", 6.83, 6.17]]}, {""text"": ""外食は、目の前にイタリアン、和食があり便利です"", ""higher"": [[""外食"", 6.5, 6.0]], ""lower"": [[""イタリアン"", 6.62, 6.0], [""和食"", 6.62, 6.0]]}, {""text"": ""朝食が美味しいです"", ""higher"": [[""朝食"", 6.67, 6.5]], ""lower"": [[""朝食"", 7.0, 6.75]]}, {""text"": ""温泉がとても心地よかったです"", ""higher"": [[""温泉"", 7.38, 6.75]], ""lower"": [[""温泉"", 7.0, 6.75]]}, {""text"": ""他のドーミーインとどうしても比べてしまうので、評価が低くなりますが、普通に良いホテルでした"", ""higher"": [[""ホテル"", 7.62, 7.12]], ""lower"": [[""ホテル"", 6.12, 5.75], [""評価"", 3.62, 5.88]]}, {""text"": ""以前お世話になったときより朝食はわるかったかな"", ""higher"": [[""朝食"", 3.67, 5.83]], ""lower"": [[""朝食"", 3.33, 5.67]]}]"
+jpn,hotel,test,3,1,7,0,7,0,0.0,"[{""text"": ""部屋はとても綺麗でした"", ""higher"": [[""部屋"", 7.5, 7.2]], ""lower"": [[""部屋"", 7.25, 7.0]]}, {""text"": ""お部屋お任せでしたが、マッサージチェアもあって仕事の疲れが癒やされました"", ""higher"": [[null, 6.12, 5.75]], ""lower"": [[""マッサージチェア"", 6.83, 6.17]]}, {""text"": ""外食は、目の前にイタリアン、和食があり便利です"", ""higher"": [[""外食"", 6.5, 6.0]], ""lower"": [[""イタリアン"", 6.62, 6.0], [""和食"", 6.62, 6.0]]}, {""text"": ""朝食が美味しいです"", ""higher"": [[""朝食"", 6.67, 6.5]], ""lower"": [[""朝食"", 7.0, 6.75]]}, {""text"": ""温泉がとても心地よかったです"", ""higher"": [[""温泉"", 7.38, 6.75]], ""lower"": [[""温泉"", 7.0, 6.75]]}, {""text"": ""他のドーミーインとどうしても比べてしまうので、評価が低くなりますが、普通に良いホテルでした"", ""higher"": [[""ホテル"", 7.62, 7.12]], ""lower"": [[""ホテル"", 6.12, 5.75], [""評価"", 3.62, 5.88]]}, {""text"": ""以前お世話になったときより朝食はわるかったかな"", ""higher"": [[""朝食"", 3.67, 5.83]], ""lower"": [[""朝食"", 3.33, 5.67]]}]"
+jpn,hotel,train,3,2,1597,1597,0,0,1.0,[]
+jpn,hotel,train,2,1,1597,1597,0,0,1.0,[]
+jpn,hotel,train,3,1,1597,1597,0,0,1.0,[]
+rus,restaurant,dev,3,2,48,48,0,0,1.0,[]
+rus,restaurant,dev,2,1,0,0,0,0,,[]
+rus,restaurant,dev,3,1,0,0,0,0,,[]
+rus,restaurant,test,3,2,630,630,0,0,1.0,[]
+rus,restaurant,test,2,1,0,0,0,0,,[]
+rus,restaurant,test,3,1,0,0,0,0,,[]
+rus,restaurant,train,3,2,1240,1239,1,1,0.9991935483870967,"[{""text"": ""мы выбрали среднее в ценовой категории меню."", ""error"": ""VA outside [1, 9]: '5#16.5'""}]"
+rus,restaurant,train,2,1,1240,1239,1,1,0.9991935483870967,"[{""text"": ""мы выбрали среднее в ценовой категории меню."", ""error"": ""VA outside [1, 9]: '5#16.5'""}]"
+rus,restaurant,train,3,1,1240,1239,1,1,0.9991935483870967,"[{""text"": ""мы выбрали среднее в ценовой категории меню."", ""error"": ""VA outside [1, 9]: '5#16.5'""}]"
+tat,restaurant,dev,3,2,48,48,0,0,1.0,[]
+tat,restaurant,dev,2,1,0,0,0,0,,[]
+tat,restaurant,dev,3,1,0,0,0,0,,[]
+tat,restaurant,test,3,2,630,630,0,0,1.0,[]
+tat,restaurant,test,2,1,0,0,0,0,,[]
+tat,restaurant,test,3,1,0,0,0,0,,[]
+tat,restaurant,train,3,2,1240,1239,1,1,0.9991935483870967,"[{""text"": ""без менюның бәя категориясендә уртачасын сайладык."", ""error"": ""VA outside [1, 9]: '5#16.5'""}]"
+tat,restaurant,train,2,1,1240,1239,1,1,0.9991935483870967,"[{""text"": ""без менюның бәя категориясендә уртачасын сайладык."", ""error"": ""VA outside [1, 9]: '5#16.5'""}]"
+tat,restaurant,train,3,1,1240,1239,1,1,0.9991935483870967,"[{""text"": ""без менюның бәя категориясендә уртачасын сайладык."", ""error"": ""VA outside [1, 9]: '5#16.5'""}]"
+ukr,restaurant,dev,3,2,48,48,0,0,1.0,[]
+ukr,restaurant,dev,2,1,0,0,0,0,,[]
+ukr,restaurant,dev,3,1,0,0,0,0,,[]
+ukr,restaurant,test,3,2,630,630,0,0,1.0,[]
+ukr,restaurant,test,2,1,0,0,0,0,,[]
+ukr,restaurant,test,3,1,0,0,0,0,,[]
+ukr,restaurant,train,3,2,1240,1239,1,1,0.9991935483870967,"[{""text"": ""ми вибрали середнє у ціновій категорії меню."", ""error"": ""VA outside [1, 9]: '5#16.5'""}]"
+ukr,restaurant,train,2,1,1240,1239,1,1,0.9991935483870967,"[{""text"": ""ми вибрали середнє у ціновій категорії меню."", ""error"": ""VA outside [1, 9]: '5#16.5'""}]"
+ukr,restaurant,train,3,1,1240,1239,1,1,0.9991935483870967,"[{""text"": ""ми вибрали середнє у ціновій категорії меню."", ""error"": ""VA outside [1, 9]: '5#16.5'""}]"
+zho,laptop,dev,3,2,300,300,0,0,1.0,[]
+zho,laptop,dev,2,1,0,0,0,0,,[]
+zho,laptop,dev,3,1,0,0,0,0,,[]
+zho,laptop,test,3,2,1000,1000,0,0,1.0,[]
+zho,laptop,test,2,1,0,0,0,0,,[]
+zho,laptop,test,3,1,0,0,0,0,,[]
+zho,laptop,train,3,2,3490,3490,0,0,1.0,[]
+zho,laptop,train,2,1,3490,3490,0,0,1.0,[]
+zho,laptop,train,3,1,3490,3490,0,0,1.0,[]
+zho,restaurant,dev,3,2,300,300,0,0,1.0,[]
+zho,restaurant,dev,2,1,0,0,0,0,,[]
+zho,restaurant,dev,3,1,0,0,0,0,,[]
+zho,restaurant,test,3,2,1000,1000,0,0,1.0,[]
+zho,restaurant,test,2,1,0,0,0,0,,[]
+zho,restaurant,test,3,1,0,0,0,0,,[]
+zho,restaurant,train,3,2,6022,6022,0,0,1.0,[]
+zho,restaurant,train,2,1,6022,6022,0,0,1.0,[]
+zho,restaurant,train,3,1,6022,6022,0,0,1.0,[]
