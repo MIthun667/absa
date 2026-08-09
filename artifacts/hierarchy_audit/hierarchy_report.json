@@ -1,0 +1,11 @@
+{
+  "alltask_datasets": 8,
+  "all_identical_across_subtasks": true,
+  "ambiguous_projection_groups": 3776,
+  "collision_groups": 4233,
+  "artifacts": [
+    "alltasks_manifest.csv",
+    "projection_collisions.csv",
+    "ambiguous_projection_examples.csv"
+  ]
+}
