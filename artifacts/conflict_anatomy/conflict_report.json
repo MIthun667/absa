@@ -1,0 +1,10 @@
+{
+  "ambiguous_groups": 3776,
+  "target1_groups": 3706,
+  "target2_groups": 70,
+  "null_aspect_groups": 303,
+  "artifacts": [
+    "conflict_details.csv",
+    "conflict_summary.csv"
+  ]
+}
