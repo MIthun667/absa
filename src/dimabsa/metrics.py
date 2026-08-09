@@ -3,8 +3,6 @@ from __future__ import annotations
 import math
 from typing import Any, Iterable
 
-from .data import parse_va
-
 D_MAX = math.sqrt(128.0)
 
 
@@ -25,13 +23,6 @@ def _index_records(records: Iterable[dict[str, Any]]) -> dict[str, dict[str, Any
 
 
 def _va_unchecked(value: Any) -> tuple[float, float]:
-    """Parse a VA pair without enforcing [1, 9].
-
-    The official evaluator computes Task-1 RMSE even when a prediction is outside
-    the nominal range; it only emits a warning. Structured tasks assign zero
-    continuous credit to an out-of-range prediction. Range handling therefore
-    belongs to the task-specific scoring function rather than this parser.
-    """
     if not isinstance(value, str) or "#" not in value:
         raise ValueError(f"Invalid VA value: {value!r}")
     left, right = value.split("#", maxsplit=1)
@@ -60,13 +51,7 @@ def evaluate_task1(
     *,
     normalize_rmse: bool = False,
 ) -> dict[str, float | int | bool]:
-    """Score DimASR with the official Task-1 semantics.
-
-    RMSE_VA is joint two-dimensional RMSE:
-        sqrt(sum_i[(Vhat-V)^2 + (Ahat-A)^2] / N)
-    and can optionally be divided by sqrt(128), matching ``--do_norm`` in the
-    official evaluator.
-    """
+    """Score DimASR with the official Task-1 semantics."""
     gold = _index_records(gold_records)
     pred = _index_records(pred_records)
 
@@ -144,23 +129,34 @@ def _match_key(annotation: dict[str, Any], task: int) -> tuple[str, ...]:
     return tuple(values)
 
 
+def _gold_structured_items(record: dict[str, Any], task: int) -> list[dict[str, Any]]:
+    """Mirror the official evaluator's Task-2 gold fallback.
+
+    For Task 2, official gold reading first requests ``Quadruplet`` (allowing
+    richer gold annotations) and falls back to ``Triplet`` when absent/empty.
+    Category is ignored by the Task-2 structural key.
+    """
+    if task == 2:
+        items = record.get("Quadruplet", [])
+        if not items:
+            items = record.get("Triplet", [])
+    else:
+        items = record.get("Quadruplet", [])
+    if not isinstance(items, list):
+        raise ValueError("Structured gold annotations must be a list")
+    return items
+
+
 def evaluate_structured(
     gold_records: Iterable[dict[str, Any]],
     pred_records: Iterable[dict[str, Any]],
     *,
     task: int,
 ) -> dict[str, float | int | bool]:
-    """Official-compatible cF1 for DimASTE (T2) and DimASQP (T3).
-
-    Structural fields must match exactly after lower-casing. A unique structural
-    match receives continuous true-positive credit ``1 - d/sqrt(128)``. If a
-    prediction repeats a matching structure more than once, the gold item is
-    treated as unmatched and all duplicates remain false positives, mirroring the
-    official script.
-    """
+    """Official-compatible cF1 for DimASTE (T2) and DimASQP (T3)."""
     if task not in (2, 3):
         raise ValueError("task must be 2 or 3")
-    field = "Triplet" if task == 2 else "Quadruplet"
+    pred_field = "Triplet" if task == 2 else "Quadruplet"
 
     gold = _index_records(gold_records)
     pred = _index_records(pred_records)
@@ -174,14 +170,14 @@ def evaluate_structured(
     out_of_range = False
 
     for record_id in all_ids:
-        gold_items = gold.get(record_id, {}).get(field, [])
-        pred_items = pred.get(record_id, {}).get(field, [])
-        if not isinstance(gold_items, list) or not isinstance(pred_items, list):
-            raise ValueError(f"{field} must be a list for ID: {record_id}")
+        gold_items = _gold_structured_items(gold.get(record_id, {}), task)
+        pred_items = pred.get(record_id, {}).get(pred_field, [])
+        if not isinstance(pred_items, list):
+            raise ValueError(f"{pred_field} must be a list for ID: {record_id}")
 
         for item in [*gold_items, *pred_items]:
             if not isinstance(item, dict) or "VA" not in item:
-                raise ValueError(f"Malformed {field} annotation for ID: {record_id}")
+                raise ValueError(f"Malformed structured annotation for ID: {record_id}")
 
         matched_pred_num = 0
         for gold_item in gold_items:
