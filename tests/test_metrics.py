@@ -91,6 +91,32 @@ def test_task2_perfect_prediction() -> None:
     assert result["FN"] == 0
 
 
+def test_task2_accepts_quadruplet_gold_like_official_reader() -> None:
+    gold = [
+        {
+            "ID": "1",
+            "Quadruplet": [
+                {
+                    "Aspect": "screen",
+                    "Opinion": "great",
+                    "Category": "DISPLAY#GENERAL",
+                    "VA": "7#7",
+                }
+            ],
+        }
+    ]
+    pred = [
+        {
+            "ID": "1",
+            "Triplet": [
+                {"Aspect": "screen", "Opinion": "great", "VA": "7#7"},
+            ],
+        }
+    ]
+    result = evaluate_structured(gold, pred, task=2)
+    assert result["cF1"] == pytest.approx(1.0)
+
+
 def test_task3_continuous_credit() -> None:
     gold = [
         {
