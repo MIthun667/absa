@@ -6,7 +6,7 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Virtual environments
+# Environment
 .venv/
 venv/
 env/
@@ -16,26 +16,26 @@ myenv/
 .vscode/
 .idea/
 
-# OS
-.DS_Store
-Thumbs.db
+# Jupyter
+.ipynb_checkpoints/
 
-# Training outputs
-checkpoints/
+# Training
 outputs/
+checkpoints/
 runs/
-wandb/
 logs/
+wandb/
 
-# Models / large artifacts
+# Model weights
 *.pt
 *.pth
 *.ckpt
 *.safetensors
 
-# Temporary files
-tmp/
+# Cache
 .cache/
+tmp/
 
-# Jupyter
-.ipynb_checkpoints/
+# OS
+.DS_Store
+Thumbs.db

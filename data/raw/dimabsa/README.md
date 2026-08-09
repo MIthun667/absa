@@ -1,17 +1,22 @@
-# DimABSA Track A Dataset
+# Official DimABSA Track A Dataset
 
-Source:
-DimABSA/DimABSA2026
+Source repository:
+https://github.com/DimABSA/DimABSA2026
 
-Only Track A is retained for this research project.
+Only Track A from the official DimABSA repository is retained here.
 
-The original repository commit used to create this snapshot is stored in:
+## Reproducibility
 
-- SOURCE_COMMIT.txt
-- SOURCE_URL.txt
+- `SOURCE_COMMIT.txt` records the exact upstream Git commit.
+- `SOURCE_URL.txt` records the upstream repository.
 
-Do not modify files inside this raw-data directory.
+## Important
 
-Any normalization, task projection, indexing, or transformed datasets must be written to:
+Files under this directory are treated as immutable raw data.
 
-data/processed/
+Do not edit, normalize, filter, merge, or otherwise modify them in place.
+
+All derived datasets must be written to:
+
+    data/processed/
+
