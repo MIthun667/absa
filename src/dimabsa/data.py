@@ -179,12 +179,28 @@ def parse_va(value: Any) -> tuple[float, float]:
     return valence, arousal
 
 
-def normalized_annotation(annotation: dict[str, Any]) -> dict[str, Any]:
-    result: dict[str, Any] = {
+def normalized_structure(annotation: dict[str, Any]) -> dict[str, Any]:
+    """Normalize non-VA fields without requiring a valid VA label.
+
+    Structural matching must remain possible even when an official VA annotation is
+    malformed or outside the documented range. VA validation is intentionally kept
+    separate in ``parse_va``.
+    """
+    polarity = annotation.get("Polarity")
+    if isinstance(polarity, str):
+        polarity = polarity.strip().upper()
+
+    return {
         "aspect": normalize_term(annotation.get("Aspect")),
         "opinion": normalize_term(annotation.get("Opinion")),
         "category": normalize_term(annotation.get("Category")),
-        "polarity": annotation.get("Polarity"),
+        "polarity": polarity,
+    }
+
+
+def normalized_annotation(annotation: dict[str, Any]) -> dict[str, Any]:
+    result: dict[str, Any] = {
+        **normalized_structure(annotation),
         "valence": None,
         "arousal": None,
     }
@@ -194,15 +210,11 @@ def normalized_annotation(annotation: dict[str, Any]) -> dict[str, Any]:
         result["valence"] = valence
         result["arousal"] = arousal
 
-    polarity = result["polarity"]
-    if isinstance(polarity, str):
-        result["polarity"] = polarity.strip().upper()
-
     return result
 
 
 def structural_key(annotation: dict[str, Any], field: str) -> tuple[Any, ...]:
-    item = normalized_annotation(annotation)
+    item = normalized_structure(annotation)
     if field in {"Aspect_VA", "Aspect_Polarity"}:
         return (item["aspect"],)
     if field == "Triplet":
@@ -213,7 +225,7 @@ def structural_key(annotation: dict[str, Any], field: str) -> tuple[Any, ...]:
 
 
 def projected_key(annotation: dict[str, Any], target_subtask: int) -> tuple[Any, ...]:
-    item = normalized_annotation(annotation)
+    item = normalized_structure(annotation)
     if target_subtask == 1:
         return (item["aspect"],)
     if target_subtask == 2:
