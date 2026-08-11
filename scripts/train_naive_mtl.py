@@ -31,7 +31,9 @@ from dimabsa.mtl_losses import (
 )
 from dimabsa.gradient_diagnostics import (
     print_gradient_diagnostics,
+    print_layerwise_gradient_diagnostics,
     run_gradient_diagnostics,
+    run_layerwise_gradient_diagnostics,
 )
 from dimabsa.mtl_eval_adapters import (
     Task1MTLAdapter,
@@ -222,6 +224,18 @@ def parse_args():
             "last_4_layers",
         ],
         default="last_layer",
+    )
+
+    parser.add_argument(
+        "--gradient-diag-layers",
+        nargs="+",
+        type=int,
+        default=None,
+        help=(
+            "Optional 1-based XLM-R transformer "
+            "layers for layer-wise gradient "
+            "diagnostics, e.g. 1 4 8 12."
+        ),
     )
 
     parser.add_argument(
@@ -1372,10 +1386,19 @@ def main():
             "diagnostic batches        :",
             args.gradient_diag_batches,
         )
-        print(
-            "scope                     :",
-            args.gradient_diag_scope,
-        )
+        if args.gradient_diag_layers:
+            print(
+                "layers                    :",
+                " ".join(
+                    f"L{x}"
+                    for x in args.gradient_diag_layers
+                ),
+            )
+        else:
+            print(
+                "scope                     :",
+                args.gradient_diag_scope,
+            )
 
     # ============================================================
     # Dataset summary
@@ -1986,26 +2009,51 @@ def main():
                 amp_dtype,
             ):
 
-                gradient_result = (
-                    run_gradient_diagnostics(
-                        model=model,
-                        task_names=(
-                            selected_tasks
-                        ),
-                        task_batch_iterators=(
-                            diagnostic_iterators
-                        ),
-                        loss_functions=(
-                            diagnostic_loss_functions
-                        ),
-                        num_batches=(
-                            args.gradient_diag_batches
-                        ),
-                        scope=(
-                            args.gradient_diag_scope
-                        ),
+                if args.gradient_diag_layers:
+
+                    gradient_result = (
+                        run_layerwise_gradient_diagnostics(
+                            model=model,
+                            task_names=(
+                                selected_tasks
+                            ),
+                            task_batch_iterators=(
+                                diagnostic_iterators
+                            ),
+                            loss_functions=(
+                                diagnostic_loss_functions
+                            ),
+                            num_batches=(
+                                args.gradient_diag_batches
+                            ),
+                            layers=tuple(
+                                args.gradient_diag_layers
+                            ),
+                        )
                     )
-                )
+
+                else:
+
+                    gradient_result = (
+                        run_gradient_diagnostics(
+                            model=model,
+                            task_names=(
+                                selected_tasks
+                            ),
+                            task_batch_iterators=(
+                                diagnostic_iterators
+                            ),
+                            loss_functions=(
+                                diagnostic_loss_functions
+                            ),
+                            num_batches=(
+                                args.gradient_diag_batches
+                            ),
+                            scope=(
+                                args.gradient_diag_scope
+                            ),
+                        )
+                    )
 
             gradient_result[
                 "step"
@@ -2015,29 +2063,64 @@ def main():
                 gradient_result
             )
 
-            print_gradient_diagnostics(
-                step=step,
-                result=gradient_result,
-            )
+            if args.gradient_diag_layers:
 
-            compact_pairs = " | ".join(
-                (
-                    f"{pair.upper()}="
-                    f"{stats['mean']:+.4f}"
-                    f" "
-                    f"(conflict "
-                    f"{100.0 * stats['conflict_rate']:.0f}%)"
+                print_layerwise_gradient_diagnostics(
+                    step=step,
+                    result=gradient_result,
                 )
-                for pair, stats
-                in gradient_result[
-                    "pairs"
-                ].items()
-            )
 
-            print(
-                f"[GRAD] step={step} | "
-                f"{compact_pairs}"
-            )
+                for (
+                    layer_name,
+                    layer_result,
+                ) in gradient_result[
+                    "layers"
+                ].items():
+
+                    compact_pairs = " | ".join(
+                        (
+                            f"{pair.upper()}="
+                            f"{stats['mean']:+.4f} "
+                            f"(conflict "
+                            f"{100.0 * stats['conflict_rate']:.0f}%)"
+                        )
+                        for pair, stats
+                        in layer_result[
+                            "pairs"
+                        ].items()
+                    )
+
+                    print(
+                        f"[GRAD-{layer_name}] "
+                        f"step={step} | "
+                        f"{compact_pairs}"
+                    )
+
+            else:
+
+                print_gradient_diagnostics(
+                    step=step,
+                    result=gradient_result,
+                )
+
+                compact_pairs = " | ".join(
+                    (
+                        f"{pair.upper()}="
+                        f"{stats['mean']:+.4f}"
+                        f" "
+                        f"(conflict "
+                        f"{100.0 * stats['conflict_rate']:.0f}%)"
+                    )
+                    for pair, stats
+                    in gradient_result[
+                        "pairs"
+                    ].items()
+                )
+
+                print(
+                    f"[GRAD] step={step} | "
+                    f"{compact_pairs}"
+                )
 
         # ========================================================
         # Fixed-protocol development evaluation.
