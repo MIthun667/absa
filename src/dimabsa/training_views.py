@@ -109,6 +109,50 @@ def build_unambiguous_view(records: list[TaskRecord]) -> list[TrainingExample]:
     return examples
 
 
+def build_drop_ambiguous_keep_duplicates_view(
+    records: list[TaskRecord],
+) -> list[TrainingExample]:
+    """
+    Drop only genuinely ambiguous projected groups.
+
+    Groups containing multiple distinct VA labels are removed entirely.
+    Non-ambiguous groups retain every original source target, including
+    repeated identical projected supervision.
+
+    This separates conflicting-label effects from repeated-supervision effects.
+    """
+    examples: list[TrainingExample] = []
+
+    for record in records:
+        groups = _group_record_targets(record)
+
+        for key, members in groups.items():
+            distinct_va = {
+                member.va
+                for member in members
+            }
+
+            if len(distinct_va) > 1:
+                continue
+
+            for member in members:
+                examples.append(
+                    TrainingExample(
+                        record_id=record.record_id,
+                        text=record.text,
+                        task=record.task,
+                        language=record.language,
+                        domain=record.domain,
+                        structural_key=key,
+                        target=member,
+                        group_size=len(members),
+                        distinct_va_count=1,
+                        ambiguous_source_group=False,
+                    )
+                )
+
+    return examples
+
 def summarize_training_views(records: list[TaskRecord]) -> TrainingViewSummary:
     if not records:
         raise ValueError("Cannot summarize an empty task record list")

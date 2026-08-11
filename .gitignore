@@ -39,3 +39,5 @@ tmp/
 # OS
 .DS_Store
 Thumbs.db
+
+src/dimabsa_mtl.egg-info/
