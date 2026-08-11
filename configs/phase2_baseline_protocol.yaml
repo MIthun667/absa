@@ -1,0 +1,56 @@
+experiment:
+  phase: 2
+  language: eng
+  domains:
+    - laptop
+    - restaurant
+
+tasks:
+  task1:
+    metric: RMSE_VA
+    secondary_metrics:
+      - PCC_V
+      - PCC_A
+
+    training_views:
+      - relation_expanded
+      - unambiguous
+
+    rationale:
+      laptop:
+        source_targets: 5773
+        structural_groups: 4958
+        ambiguous_groups: 584
+        dropped_ambiguous_targets: 1313
+
+      restaurant:
+        source_targets: 3659
+        structural_groups: 3107
+        ambiguous_groups: 370
+        dropped_ambiguous_targets: 817
+
+  task2:
+    metric: cF1
+    primary_training_view: unambiguous
+    diagnostic_training_view: relation_expanded
+
+  task3:
+    metric: cF1
+    primary_training_view: unambiguous
+    diagnostic_training_view: relation_expanded
+
+experimental_order:
+  - task1_relation_expanded
+  - task1_unambiguous
+  - task2_unambiguous
+  - task3_unambiguous
+  - naive_mtl_after_single_task_baselines
+
+rules:
+  modify_raw_data: false
+  average_ambiguous_va: false
+  deduplicate_safe_collapses: true
+  use_official_dev_split: true
+  use_official_metric: true
+  compare_same_backbone: true
+  compare_same_seed_set: true
