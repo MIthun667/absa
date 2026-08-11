@@ -49,6 +49,9 @@ from dimabsa.naive_mtl_model import (
 from dimabsa.partial_sharing_mtl_model import (
     PartialSharingMTLModel,
 )
+from dimabsa.hierarchical_sharing_mtl_model import (
+    HierarchicalSharingMTLModel,
+)
 from dimabsa.task3_data import (
     split_category,
 )
@@ -101,6 +104,34 @@ def parse_args():
     parser.add_argument(
         "--language",
         default="eng",
+    )
+
+    parser.add_argument(
+        "--sharing-mode",
+        choices=[
+            "partial",
+            "hierarchical",
+        ],
+        default="partial",
+        help=(
+            "Encoder sharing topology. "
+            "'partial' reproduces the existing "
+            "uniform partial-sharing baseline; "
+            "'hierarchical' shares a common trunk "
+            "across all tasks and an additional "
+            "structured block across T2/T3."
+        ),
+    )
+
+    parser.add_argument(
+        "--structured-shared-layers",
+        type=int,
+        default=2,
+        help=(
+            "Additional transformer layers shared "
+            "only by T2 and T3 in hierarchical "
+            "mode."
+        ),
     )
 
     parser.add_argument(
@@ -1464,31 +1495,62 @@ def main():
     # Shared model
     # ============================================================
 
-    model = PartialSharingMTLModel(
-        args.model_name,
-        shared_layers=(
-            args.shared_layers
-        ),
-        active_tasks=(
-            selected_tasks
-        ),
-        num_t3_categories=(
-            len(category_names)
-            if "t3" in selected_tasks
-            else 1
-        ),
-        num_t3_entities=(
-            len(entity_names)
-            if "t3" in selected_tasks
-            else 1
-        ),
-        num_t3_attributes=(
-            len(attribute_names)
-            if "t3" in selected_tasks
-            else 1
-        ),
-        dropout=args.dropout,
-    ).to(device)
+    common_model_kwargs = {
+        "model_name":
+            args.model_name,
+        "active_tasks":
+            selected_tasks,
+        "num_t3_categories":
+            (
+                len(category_names)
+                if "t3" in selected_tasks
+                else 1
+            ),
+        "num_t3_entities":
+            (
+                len(entity_names)
+                if "t3" in selected_tasks
+                else 1
+            ),
+        "num_t3_attributes":
+            (
+                len(attribute_names)
+                if "t3" in selected_tasks
+                else 1
+            ),
+        "dropout":
+            args.dropout,
+    }
+
+    if (
+        args.sharing_mode
+        == "hierarchical"
+    ):
+
+        model = (
+            HierarchicalSharingMTLModel(
+                shared_layers=(
+                    args.shared_layers
+                ),
+                structured_shared_layers=(
+                    args.structured_shared_layers
+                ),
+                **common_model_kwargs,
+            )
+            .to(device)
+        )
+
+    else:
+
+        model = (
+            PartialSharingMTLModel(
+                shared_layers=(
+                    args.shared_layers
+                ),
+                **common_model_kwargs,
+            )
+            .to(device)
+        )
 
     architecture = (
         model.architecture_summary()
@@ -1498,25 +1560,83 @@ def main():
     print("ENCODER SHARING")
     print("-" * 80)
     print(
+        "sharing mode             :",
+        args.sharing_mode,
+    )
+    print(
         "total transformer layers :",
         architecture[
             "total_layers"
         ],
     )
+
+    if (
+        args.sharing_mode
+        == "hierarchical"
+    ):
+
+        print(
+            "all-task shared layers  :",
+            architecture[
+                "all_task_shared_layers"
+            ],
+        )
+
+        print(
+            "T2/T3 shared layers     :",
+            architecture[
+                "structured_shared_layers"
+            ],
+        )
+
+        print(
+            "T2/T3 shared range      :",
+            (
+                f"L{architecture['structured_start_layer']}"
+                "-"
+                f"L{architecture['structured_end_layer']}"
+            ),
+        )
+
+        print(
+            "T1 private layers       :",
+            architecture[
+                "t1_private_layers"
+            ],
+        )
+
+        print(
+            "T2 terminal private     :",
+            architecture[
+                "t2_terminal_private_layers"
+            ],
+        )
+
+        print(
+            "T3 terminal private     :",
+            architecture[
+                "t3_terminal_private_layers"
+            ],
+        )
+
+    else:
+
+        print(
+            "shared layers            :",
+            architecture[
+                "shared_layers"
+            ],
+        )
+
+        print(
+            "private layers / task    :",
+            architecture[
+                "private_layers_per_task"
+            ],
+        )
+
     print(
-        "shared layers            :",
-        architecture[
-            "shared_layers"
-        ],
-    )
-    print(
-        "private layers / task    :",
-        architecture[
-            "private_layers_per_task"
-        ],
-    )
-    print(
-        "active private branches  :",
+        "active tasks             :",
         " ".join(
             architecture[
                 "active_tasks"
@@ -1556,7 +1676,7 @@ def main():
             (
                 name.startswith("t1_")
                 or name.startswith(
-                    "private_layers.t1."
+                    "task_encoders.t1."
                 )
             )
             and "t1" not in selected_tasks
@@ -1567,7 +1687,7 @@ def main():
             (
                 name.startswith("t2_")
                 or name.startswith(
-                    "private_layers.t2."
+                    "task_encoders.t2."
                 )
             )
             and "t2" not in selected_tasks
@@ -1578,7 +1698,7 @@ def main():
             (
                 name.startswith("t3_")
                 or name.startswith(
-                    "private_layers.t3."
+                    "task_encoders.t3."
                 )
             )
             and "t3" not in selected_tasks
