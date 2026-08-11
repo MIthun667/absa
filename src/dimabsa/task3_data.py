@@ -179,18 +179,21 @@ def gold_quadruplet_map(
     example: Task3Example,
 ) -> dict[
     tuple[str, str, str],
-    tuple[float, float],
+    tuple[tuple[float, float], ...],
 ]:
     """
     Return:
-        (aspect, opinion, category) -> (valence, arousal)
 
-    Structural fields are case-normalized for matching.
+        (aspect, opinion, category)
+            -> ((V1, A1), (V2, A2), ...)
+
+    Multiple VA annotations for the same structural A/O/C key are
+    intentionally preserved rather than averaged or discarded.
     """
     result: dict[
         tuple[str, str, str],
-        tuple[float, float],
-    ] = {}
+        list[tuple[float, float]],
+    ] = defaultdict(list)
 
     for q in example.quadruplets:
 
@@ -200,21 +203,17 @@ def gold_quadruplet_map(
             normalize_category(q.category).casefold(),
         )
 
-        value = (
-            float(q.valence),
-            float(q.arousal),
+        result[key].append(
+            (
+                float(q.valence),
+                float(q.arousal),
+            )
         )
 
-        if key in result and result[key] != value:
-            raise ValueError(
-                "Duplicate Task-3 quadruplet key has inconsistent VA: "
-                f"{key}: {result[key]} vs {value}"
-            )
-
-        result[key] = value
-
-    return result
-
+    return {
+        key: tuple(values)
+        for key, values in result.items()
+    }
 
 def relation_category_map(
     example: Task3Example,
@@ -253,27 +252,34 @@ def category_va_map(
     example: Task3Example,
 ) -> dict[
     tuple[str, str],
-    dict[str, tuple[float, float]],
+    dict[
+        str,
+        tuple[tuple[float, float], ...],
+    ],
 ]:
     """
     Return:
 
         (Aspect, Opinion)
             -> {
-                Category_1: (V1, A1),
-                Category_2: (V2, A2),
-                ...
+                Category:
+                    ((V1, A1), (V2, A2), ...)
             }
 
-    This is the core T3 supervision contract.
-
-    It preserves the empirical fact that the same (A,O) relation can
-    have multiple categories AND category-specific VA values.
+    This preserves:
+    - multiple categories per A/O relation;
+    - category-specific VA;
+    - rare duplicate A/O/C annotations with different VA values.
     """
     result: dict[
         tuple[str, str],
-        dict[str, tuple[float, float]],
-    ] = defaultdict(dict)
+        dict[
+            str,
+            list[tuple[float, float]],
+        ],
+    ] = defaultdict(
+        lambda: defaultdict(list)
+    )
 
     for q in example.quadruplets:
 
@@ -282,25 +288,26 @@ def category_va_map(
             normalize_surface(q.opinion),
         )
 
-        category = normalize_category(q.category)
-
-        va = (
-            float(q.valence),
-            float(q.arousal),
+        category = normalize_category(
+            q.category
         )
 
-        existing = result[pair].get(category)
-
-        if existing is not None and existing != va:
-            raise ValueError(
-                "Same (Aspect, Opinion, Category) has inconsistent VA: "
-                f"{pair}, {category}: {existing} vs {va}"
+        result[pair][category].append(
+            (
+                float(q.valence),
+                float(q.arousal),
             )
+        )
 
-        result[pair][category] = va
-
-    return dict(result)
-
+    return {
+        pair: {
+            category: tuple(values)
+            for category, values
+            in by_category.items()
+        }
+        for pair, by_category
+        in result.items()
+    }
 
 def candidate_relation_keys(
     example: Task3Example,

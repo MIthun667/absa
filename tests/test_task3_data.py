@@ -100,15 +100,13 @@ def test_preserves_category_specific_va():
     assert mapping[
         ("food", "good")
     ]["FOOD#QUALITY"] == (
-        7.0,
-        7.2,
+        (7.0, 7.2),
     )
 
     assert mapping[
         ("food", "good")
     ]["FOOD#PRICES"] == (
-        6.5,
-        6.8,
+        (6.5, 6.8),
     )
 
 
