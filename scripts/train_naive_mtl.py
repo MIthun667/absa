@@ -46,6 +46,9 @@ from dimabsa.mtl_scheduler import (
 from dimabsa.naive_mtl_model import (
     NaiveMTLModel,
 )
+from dimabsa.partial_sharing_mtl_model import (
+    PartialSharingMTLModel,
+)
 from dimabsa.task3_data import (
     split_category,
 )
@@ -98,6 +101,19 @@ def parse_args():
     parser.add_argument(
         "--language",
         default="eng",
+    )
+
+    parser.add_argument(
+        "--shared-layers",
+        type=int,
+        default=12,
+        help=(
+            "Number of shared XLM-R transformer "
+            "layers. 12 reproduces naive full "
+            "sharing; 10 gives 2 private upper "
+            "layers/task; 8 gives 4 private "
+            "upper layers/task."
+        ),
     )
 
     parser.add_argument(
@@ -1448,8 +1464,14 @@ def main():
     # Shared model
     # ============================================================
 
-    model = NaiveMTLModel(
+    model = PartialSharingMTLModel(
         args.model_name,
+        shared_layers=(
+            args.shared_layers
+        ),
+        active_tasks=(
+            selected_tasks
+        ),
         num_t3_categories=(
             len(category_names)
             if "t3" in selected_tasks
@@ -1467,6 +1489,40 @@ def main():
         ),
         dropout=args.dropout,
     ).to(device)
+
+    architecture = (
+        model.architecture_summary()
+    )
+
+    print()
+    print("ENCODER SHARING")
+    print("-" * 80)
+    print(
+        "total transformer layers :",
+        architecture[
+            "total_layers"
+        ],
+    )
+    print(
+        "shared layers            :",
+        architecture[
+            "shared_layers"
+        ],
+    )
+    print(
+        "private layers / task    :",
+        architecture[
+            "private_layers_per_task"
+        ],
+    )
+    print(
+        "active private branches  :",
+        " ".join(
+            architecture[
+                "active_tasks"
+            ]
+        ),
+    )
 
     # ------------------------------------------------------------
     # Evaluation adapters.
@@ -1497,19 +1553,34 @@ def main():
     ):
 
         if (
-            name.startswith("t1_")
+            (
+                name.startswith("t1_")
+                or name.startswith(
+                    "private_layers.t1."
+                )
+            )
             and "t1" not in selected_tasks
         ):
             parameter.requires_grad = False
 
         elif (
-            name.startswith("t2_")
+            (
+                name.startswith("t2_")
+                or name.startswith(
+                    "private_layers.t2."
+                )
+            )
             and "t2" not in selected_tasks
         ):
             parameter.requires_grad = False
 
         elif (
-            name.startswith("t3_")
+            (
+                name.startswith("t3_")
+                or name.startswith(
+                    "private_layers.t3."
+                )
+            )
             and "t3" not in selected_tasks
         ):
             parameter.requires_grad = False

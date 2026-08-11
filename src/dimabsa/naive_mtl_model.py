@@ -189,7 +189,15 @@ class NaiveMTLModel(nn.Module):
         *,
         input_ids: torch.Tensor,
         attention_mask: torch.Tensor,
+        task: str | None = None,
     ) -> torch.Tensor:
+        """
+        Encode with the fully shared backbone.
+
+        ``task`` is intentionally ignored here.  It exists so the
+        loss/evaluation code can use one task-aware interface for both
+        naive full sharing and partial sharing.
+        """
 
         outputs = self.encoder(
             input_ids=input_ids,

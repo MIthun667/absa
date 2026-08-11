@@ -21,11 +21,17 @@ def task1_loss(
         mean MSE over valence/arousal.
     """
 
-    outputs = model.encoder(
-        **inputs
+    hidden = model.encode(
+        input_ids=inputs[
+            "input_ids"
+        ],
+        attention_mask=inputs[
+            "attention_mask"
+        ],
+        task="t1",
     )
 
-    cls = outputs.last_hidden_state[
+    cls = hidden[
         :,
         0,
     ]
@@ -229,6 +235,7 @@ def task2_loss(
     hidden = model.encode(
         input_ids=input_ids,
         attention_mask=attention_mask,
+        task="t2",
     )
 
     (
@@ -805,6 +812,7 @@ def task3_loss(
     hidden = model.encode(
         input_ids=input_ids,
         attention_mask=attention_mask,
+        task="t3",
     )
 
     (

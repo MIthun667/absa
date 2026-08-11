@@ -26,14 +26,20 @@ class Task1MTLAdapter(nn.Module):
         **inputs,
     ) -> torch.Tensor:
 
-        outputs = (
-            self.shared_model.encoder(
-                **inputs
+        hidden = (
+            self.shared_model.encode(
+                input_ids=inputs[
+                    "input_ids"
+                ],
+                attention_mask=inputs[
+                    "attention_mask"
+                ],
+                task="t1",
             )
         )
 
         cls = (
-            outputs.last_hidden_state[
+            hidden[
                 :,
                 0,
             ]
@@ -77,6 +83,7 @@ class Task2MTLAdapter(nn.Module):
                 attention_mask=(
                     attention_mask
                 ),
+                task="t2",
             )
         )
 
@@ -190,6 +197,7 @@ class Task3MTLAdapter(nn.Module):
                 attention_mask=(
                     attention_mask
                 ),
+                task="t3",
             )
         )
 
