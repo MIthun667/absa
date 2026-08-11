@@ -52,6 +52,9 @@ from dimabsa.partial_sharing_mtl_model import (
 from dimabsa.hierarchical_sharing_mtl_model import (
     HierarchicalSharingMTLModel,
 )
+from dimabsa.explicit_hierarchical_transfer_mtl_model import (
+    ExplicitHierarchicalTransferMTLModel,
+)
 from dimabsa.task3_data import (
     split_category,
 )
@@ -111,6 +114,7 @@ def parse_args():
         choices=[
             "partial",
             "hierarchical",
+            "explicit_transfer",
         ],
         default="partial",
         help=(
@@ -1524,7 +1528,28 @@ def main():
 
     if (
         args.sharing_mode
-        == "hierarchical"
+        == "explicit_transfer"
+    ):
+
+        model = (
+            ExplicitHierarchicalTransferMTLModel(
+                shared_layers=(
+                    args.shared_layers
+                ),
+                structured_shared_layers=(
+                    args.structured_shared_layers
+                ),
+                **common_model_kwargs,
+            )
+            .to(device)
+        )
+
+    elif (
+        args.sharing_mode
+        in {
+            "hierarchical",
+            "explicit_transfer",
+        }
     ):
 
         model = (
@@ -1572,7 +1597,10 @@ def main():
 
     if (
         args.sharing_mode
-        == "hierarchical"
+        in {
+            "hierarchical",
+            "explicit_transfer",
+        }
     ):
 
         print(
@@ -1618,6 +1646,39 @@ def main():
                 "t3_terminal_private_layers"
             ],
         )
+
+        if (
+            args.sharing_mode
+            == "explicit_transfer"
+        ):
+
+            print(
+                "explicit transfer       :",
+                architecture[
+                    "transfer_direction"
+                ],
+            )
+
+            print(
+                "transfer level          :",
+                architecture[
+                    "transfer_level"
+                ],
+            )
+
+            print(
+                "teacher stop-gradient   :",
+                architecture[
+                    "transfer_stop_gradient"
+                ],
+            )
+
+            print(
+                "zero-init residual      :",
+                architecture[
+                    "transfer_zero_initialized"
+                ],
+            )
 
     else:
 
